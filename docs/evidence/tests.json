@@ -1,0 +1,44 @@
+[
+  {
+    "name": "com.synechisveltiosi.commerce.ordering.OrderTest",
+    "tests": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.synechisveltiosi.commerce.fulfillment.FulfillmentTest",
+    "tests": "10",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.synechisveltiosi.commerce.platform.RelayTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.synechisveltiosi.commerce.platform.HandlerTest",
+    "tests": "8",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.synechisveltiosi.commerce.platform.AwsRetryTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.synechisveltiosi.commerce.integration.AwsAdaptersIT",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  }
+]

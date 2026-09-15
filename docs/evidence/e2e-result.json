@@ -1,0 +1,9 @@
+{
+  "orderId": "18d67d2a-3d07-35a7-b7bb-385b9dd685a2",
+  "fulfillment": "COMPLETED",
+  "receiptKey": "receipts/18d67d2a-3d07-35a7-b7bb-385b9dd685a2.txt",
+  "completionEventId": "b11f1f63-771d-3686-8c4e-0c0f3472bd0e",
+  "duplicateInvocation": "PASS",
+  "concurrentApiReplay": "PASS",
+  "partialBatchInvocation": "PASS"
+}

@@ -1,0 +1,13 @@
+**/target/
+.idea/
+*.iml
+.env
+.local/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.log
+.DS_Store
+__pycache__/
+*.pyc

@@ -1,0 +1,45 @@
+name: Verify commerce
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.13.5
+          terraform_wrapper: false
+      - run: ./mvnw -B -Pintegration clean verify
+      - run: python3 scripts/check-architecture.py
+      - run: terraform -chdir=infrastructure/terraform init -backend=false -input=false
+      - run: terraform -chdir=infrastructure/terraform validate
+      - run: terraform -chdir=infrastructure/terraform fmt -check
+      - uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+      - run: docker compose up -d --wait
+      - run: ./scripts/init-localstack.sh
+      - run: python3 scripts/e2e.py
+      - run: python3 scripts/failure-e2e.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-evidence
+          include-hidden-files: true
+          path: |
+            **/target/surefire-reports/
+            **/target/failsafe-reports/
+            .local/*result.json
+            runtime/target/commerce.zip
+      - run: docker compose down
+        if: always()

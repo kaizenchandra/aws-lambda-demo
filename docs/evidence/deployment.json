@@ -1,0 +1,8 @@
+{
+  "environment": "LocalStack 4.12.0",
+  "managedResources": 108,
+  "artifactSha256": "4e4527f3b2b4bf51f4c98d7742f5c08a4e0f77d583395ef94692053250feef21",
+  "terraformConvergence": "No changes; exit code 0",
+  "provisioningScript": "scripts/init-localstack.sh; exit code 0",
+  "reproducibleArtifact": "clean verify and subsequent package produced identical SHA-256"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.synechisveltiosi</groupId>
+        <artifactId>aws-lambda-demo</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>contracts</artifactId>
+    <dependencies/>
+</project>

@@ -1,0 +1,10 @@
+{
+  "poisonMessageRedriven": true,
+  "receiveAttributes": {
+    "ApproximateReceiveCount": "3"
+  },
+  "healthyOrderCompleted": "7afd9f34-5cce-3eac-8544-813ae094bb8a",
+  "workerAlias": "commerce-local-fulfillment-worker:live",
+  "testQueueVisibilitySeconds": 30,
+  "testMaxReceiveCount": 2
+}
