@@ -1,6 +1,7 @@
 # Implementation phases
 
-Complete implementation lives in the linked source files, not duplicated snippets. Paths below are repository-relative. The evidence ledger in [validation.md](validation.md) supersedes provisional checkpoints.
+Complete implementation lives in the linked source files, not duplicated snippets. Paths below are repository-relative.
+The evidence ledger in [validation.md](validation.md) supersedes provisional checkpoints.
 
 ## Phase 01 — Business Requirements
 
@@ -270,7 +271,8 @@ API Gateway → OrderHandler/query; SQS → FulfillmentHandler.
 
 ### Files Created or Modified
 
-runtime/src/main/java/com/synechisveltiosi/commerce/ordering/adapter/in; runtime/src/main/java/com/synechisveltiosi/commerce/fulfillment/adapter/in
+runtime/src/main/java/com/synechisveltiosi/commerce/ordering/adapter/in;
+runtime/src/main/java/com/synechisveltiosi/commerce/fulfillment/adapter/in
 
 ### Complete Implementation
 
@@ -312,7 +314,8 @@ Aggregate+outbox commit; immutable receipt before completion.
 
 ### Files Created or Modified
 
-runtime/src/main/java/com/synechisveltiosi/commerce/ordering/adapter/out; runtime/src/main/java/com/synechisveltiosi/commerce/fulfillment/adapter/out
+runtime/src/main/java/com/synechisveltiosi/commerce/ordering/adapter/out;
+runtime/src/main/java/com/synechisveltiosi/commerce/fulfillment/adapter/out
 
 ### Complete Implementation
 

@@ -16,7 +16,8 @@ parent.
 To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
-
 ### Implemented reference project
 
-Start with [README.md](README.md). The original starter has become a Maven reactor with Ordering and Fulfillment cores, Lambda adapters, LocalStack/Terraform infrastructure, and automated tests. See [the phase guide](docs/phases.md) and [validation evidence](docs/validation.md).
+Start with [README.md](README.md). The original starter has become a Maven reactor with Ordering and Fulfillment cores,
+Lambda adapters, LocalStack/Terraform infrastructure, and automated tests. See [the phase guide](docs/phases.md)
+and [validation evidence](docs/validation.md).

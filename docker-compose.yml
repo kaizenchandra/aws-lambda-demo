@@ -13,7 +13,7 @@ services:
     networks:
       - commerce
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4566/_localstack/health"]
+      test: [ "CMD", "curl", "-f", "http://localhost:4566/_localstack/health" ]
       interval: 5s
       timeout: 3s
       retries: 30
